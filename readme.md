@@ -11,10 +11,10 @@ Aplicação Jakarta EE 9.1.0 + build imagem Dockerhub para fins de teste e debug
 ### Detalhes da aplicação
 
 - Contém a estrutura mínima de um projeto Jakarta EE 9.1.0 com Java 21 
-- A imagem usa o container payara/server-web:latest 
+- A imagem usa o container payara/server-web:latest para executar a aplicação 
 - Implementado um servlet com anotação @WebServlet
-- Utiliza JSP e JSTL
-- Usa o novo descritor payara-web.xml
+- utilizado JSP e JSTL apenas
+- O deploy possui o novo descritor payara-web.xml
 
 
 ### Subir container Docker
@@ -22,6 +22,7 @@ Aplicação Jakarta EE 9.1.0 + build imagem Dockerhub para fins de teste e debug
 ```bash
 docker compose up
 ```
+**Nota: Acessar a aplicação no endereço http://localhost:8080/jakartaapp/index.html**
 
 
 ### Autor
